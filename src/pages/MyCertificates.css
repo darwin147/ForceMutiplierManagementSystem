@@ -1,0 +1,150 @@
+.certificates-page {
+  min-height: 100vh;
+  margin-left: 250px;
+  width: calc(100% - 250px);
+  padding: 35px;
+  background: #f4f6f8;
+}
+
+.page-header {
+  margin-bottom: 25px;
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.page-header p {
+  margin: 7px 0 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.certificate-summary {
+  width: 220px;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.04);
+}
+
+.certificate-summary span {
+  display: block;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.certificate-summary strong {
+  display: block;
+  margin-top: 5px;
+  color: #123b6d;
+  font-size: 26px;
+}
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.certificate-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.04);
+}
+
+.certificate-preview {
+  flex-shrink: 0;
+}
+
+.certificate-paper {
+  width: 120px;
+  height: 155px;
+  background: #f8f4e8;
+  border: 1px solid #d8cda9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.certificate-seal {
+  width: 35px;
+  height: 35px;
+  border: 2px solid #123b6d;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #123b6d;
+  font-size: 10px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.certificate-paper strong {
+  font-size: 11px;
+}
+
+.certificate-paper small {
+  margin-top: 6px;
+  font-size: 7px;
+  color: #777;
+}
+
+.certificate-info {
+  min-width: 0;
+}
+
+.certificate-info h2 {
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+
+.certificate-info p {
+  margin: 0 0 7px;
+  color: #6b7280;
+  font-size: 12px;
+}
+
+.certificate-info span {
+  display: block;
+  color: #9ca3af;
+  font-size: 11px;
+  margin-bottom: 18px;
+}
+
+.view-certificate {
+  border: none;
+  background: #123b6d;
+  color: white;
+  padding: 9px 14px;
+  border-radius: 7px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.view-certificate:hover {
+  background: #0d2d54;
+}
+
+@media (max-width: 900px) {
+  .certificates-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .certificate-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
